@@ -1,0 +1,94 @@
+# Create window
+root = tk.Tk()
+root.title("Instagram Login")
+root.geometry("400x700")
+root.configure(bg="white")
+
+# Language
+language = tk.Label(
+    root,
+    text="English (US)",
+    bg="white",
+    fg="gray",
+    font=("Arial", 12)
+)
+language.pack(pady=20)
+
+# Logo
+logo = tk.Label(
+    root,
+    text="Instagram",
+    bg="white",
+    fg="black",
+    font=("Arial", 24, "bold")
+)
+logo.pack(pady=40)
+
+# Username Entry
+username = tk.Entry(
+    root,
+    font=("Arial", 14),
+    width=30
+)
+username.insert(0, "Username, email or mobile number")
+username.pack(pady=10, ipady=12)
+
+# Password Entry
+password = tk.Entry(
+    root,
+    font=("Arial", 14),
+    width=30,
+    show="*"
+)
+password.pack(pady=10, ipady=12)
+
+# Login Button
+login_btn = tk.Button(
+    root,
+    text="Log in",
+    bg="#1877F2",
+    fg="white",
+    font=("Arial", 16),
+    relief="flat",
+    width=25,
+    height=2
+)
+login_btn.pack(pady=20)
+
+# Forgot Password
+forgot = tk.Label(
+    root,
+    text="Forgot password?",
+    bg="white",
+    fg="black",
+    font=("Arial", 12)
+)
+forgot.pack(pady=10)
+
+# Spacer
+tk.Label(root, bg="white").pack(expand=True)
+
+# Create Account Button
+create_btn = tk.Button(
+    root,
+    text="Create new account",
+    bg="white",
+    fg="#1877F2",
+    font=("Arial", 14),
+    width=25,
+    height=2,
+    relief="solid"
+
+create_btn.pack(pady=20)
+
+# Meta Label
+meta = tk.Label(
+    root,
+    text="∞ Meta",
+    bg="white",
+    fg="black",
+    font=("Arial", 14)
+)
+meta.pack(pady=10)
+
+root.mainloop()
